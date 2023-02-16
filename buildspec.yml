@@ -10,7 +10,6 @@ phases:
   build:
     commands:
       - echo build Docker image on `date`
-      - cd src
       - docker build -t grp2c2jxaimage:latest .
       - docker tag 962804699607.dkr.ecr.us-west-2.amazonaws.com/group2c2-ecr-jxa:latest
       
