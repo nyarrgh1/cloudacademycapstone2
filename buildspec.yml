@@ -20,6 +20,6 @@ phases:
       - echo push latest Docker images to ECR...
       - docker push 962804699607.dkr.ecr.us-west-2.amazonaws.com/group2c2-ecr-jxa:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"grp2c2jxaimage","imageUri":"962804699607.dkr.ecr.us-west-2.amazonaws.com/group2c2-ecr-jxa:latest"}]' > imagedefinitions.json
+      - printf '[{"name":"group2c2jxa_my_first_task","imageUri":"962804699607.dkr.ecr.us-west-2.amazonaws.com/group2c2-ecr-jxa:latest"}]' > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
